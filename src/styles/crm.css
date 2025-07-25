@@ -1,0 +1,93 @@
+.crm-container {
+  padding: 20px;
+  background-color: #f4f6fa;
+  min-height: 100vh;
+}
+
+.sales-overview {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.sales-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time-toggle button {
+  background: #f2f2f2;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.time-toggle .active {
+  background: #1e1e2f;
+  color: white;
+}
+
+.sales-values {
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+  margin: 20px 0;
+}
+
+.sales-values h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.sales-values p {
+  font-size: 14px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.dot.blue { background: blue; }
+.dot.green { background: green; }
+
+.green { color: green; }
+.red { color: red; }
+
+.download-report {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.stat-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.stat-card h4 {
+  color: #555;
+}
+
+.stat-card .icon {
+  font-size: 28px;
+  color: #a685ff;
+}

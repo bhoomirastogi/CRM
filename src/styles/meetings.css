@@ -1,0 +1,67 @@
+.meeting-schedule-container {
+  background-color: #eaeaec;
+  padding: 0 20px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: rgb(22, 21, 21);
+  width: 100%;
+  margin: 0;
+  margin-bottom: 50px; 
+}
+
+.main-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #2f2f2f; 
+}
+
+.meeting-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.meeting-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d1cdcd; 
+  padding: 12px 16px;
+  color: rgb(22, 21, 21);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.table-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.kebab {
+  font-size: 25px;
+  cursor: pointer;
+  color: rgb(22, 21, 21);
+}
+
+.meeting-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.meeting-table th {
+  background-color: #e4e2e2; 
+  text-align: left;
+  padding: 12px 16px;
+  font-weight: bold;
+  color: rgb(22, 21, 21);
+}
+
+.meeting-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+  color: rgb(22, 21, 21);
+}

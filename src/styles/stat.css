@@ -1,0 +1,58 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #eaeaec;
+  min-height: 100vh;
+  transition: margin-left 0.3s ease;
+}
+
+.stats-card {
+  background-color: #eaeaec;
+  border-radius: 12px;
+  padding: 18px;
+  color: rgb(22,21,21);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 130px;
+  box-shadow: 0 4px 12px rgba(10, 10, 10, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.stats-card:hover {
+  transform: translateY(-4px);
+}
+
+.stats-card .icon {
+  font-size: 2.2rem;
+  color: #7d5fff;
+}
+
+.stats-info .title {
+  font-size: 13px;
+  color: rgb(22,21,21);
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.stats-info .value {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.stats-info .change.positive {
+  color: #00ff88;
+}
+
+.stats-info .change.negative {
+  color: #ff4d4d;
+}
+
+.stats-info .comparison {
+  font-size: 12px;
+  color: rgb(22,21,21);
+}
