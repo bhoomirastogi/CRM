@@ -56,3 +56,14 @@
   font-size: 12px;
   color: rgb(22,21,21);
 }
+/* src/styles/stat.css */
+@media (max-width: 380px) { /* Adjust breakpoint as needed */
+  .dashboard {
+    grid-template-columns: 1fr; /* Force single column on very small screens */
+  }
+  .stats-card {
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start;
+    height: auto;
+  }
+}

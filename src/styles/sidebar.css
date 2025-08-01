@@ -62,3 +62,14 @@
   padding-left: 8px;
   color: #f3a6dc;
 }
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .sidebar-open .sidebar {
+    transform: translateX(0);
+  }
+}
+

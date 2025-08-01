@@ -1,15 +1,73 @@
-
+/* Base Layout */
 .layout {
-  transition: margin-left 0.3s ease;
-}
-
-.layout.sidebar-open {
-  margin-left: 250px;
-}
-
-
-.main-content {
-  padding: 20px;
-  background-color: #eaeaec;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+/* Sidebar Open shifts layout only for Desktop */
+.sidebar-open {
+  margin-left: 250px; /* Sidebar width */
+}
+
+/* ------------------------- */
+/* Responsive: Tablet & Mobile */
+/* ------------------------- */
+
+@media (max-width: 1024px) {
+  /* Sidebar Overlay Mode */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #eaeaec;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  /* Show Sidebar when Open */
+  .sidebar-open .sidebar {
+    transform: translateX(0);
+  }
+
+  /* Prevent Content Shift */
+  .sidebar-open {
+    margin-left: 0;
+  }
+
+  /* Content Container */
+  .component-container {
+    margin-left: 0;
+    padding: 1rem;
+  }
+}
+
+/* Utility Classes */
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .show-on-mobile {
+    display: block;
+  }
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(234, 234, 236, 0.95); 
+  z-index: 900;
+}
+
+
+.sidebar-open body {
+  overflow: hidden;
 }

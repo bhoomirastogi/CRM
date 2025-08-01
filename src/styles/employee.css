@@ -167,3 +167,10 @@ body {
 .info-box p {
   margin: 5px 0;
 }
+/* src/styles/employee.css */
+.table-container {
+  overflow-x: auto; /* Add horizontal scroll for tables */
+}
+.table-container table {
+  min-width: 500px; /* Ensure table doesn't shrink too much, force scroll */
+}

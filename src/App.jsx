@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Sidebar from './Components/Sidebar';
 import StatsCard from './Components/Statscard';
@@ -17,7 +17,7 @@ function App() {
   const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
 
   return (
-    <Router>
+    <BrowserRouter basename="/CRM">
       <div className={`layout ${isSidebarOpen ? 'sidebar-open' : ''}`}>
         {isSidebarOpen && <Sidebar onClose={toggleSidebar} />}
         <Navbar toggleSidebar={toggleSidebar} />
@@ -38,8 +38,8 @@ function App() {
           <Route path="/CRM-analytics" element={<Crm />} />
         </Routes>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
-export default App;
+export default App; 
